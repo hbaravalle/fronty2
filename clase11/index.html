@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Formulario de Registro</h1>
+      <form>
+        <div class="input-container">
+          <label for="email">Email</label>
+          <input
+            name="email"
+            type="email"
+            id="email-input"
+            placeholder="Ingresa tu email"
+          />
+        </div>
+        <div class="input-container">
+          <label for="password">Contraseña
+            <input
+              name="password"
+              type="password"
+              id="password-input"
+              placeholder="Ingresa tu contraseña"
+            />
+            <i class="fas fa-eye" id="togglePassword"></i>
+          </label>
+        </div>
+
+        
+        <div class="input-container">
+          <label for="paises">Pais</label>
+          <select name="paises" id="paises">
+            <option value="opc1">Opcion 1</option>
+            <option value="opc2">Opcion 2</option>
+            <option value="opc3">Opcion 3</option>
+            <option value="opc4">Opcion 4</option>
+          </select>
+        </div>
+
+
+        <div class="input-container input-radio">
+          <label for="legalAge">¿Sos mayor de edad?</label>
+          <div class="horizontal-container">
+            <div class="radio-container">
+              <p>Si</p>
+              <input
+                name="legalAge"
+                type="radio"
+                value="true"
+                class="age-input"
+                id="age_yes"
+              />
+            </div>
+            <div class="radio-container">
+              <p>No</p>
+              <input
+                name="legalAge"
+                type="radio"
+                value="false"
+                class="age-input"
+                id="age_no"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="horizontal-container tyc-container">
+              <input name="termsAndConditions" type="checkbox" id="tyc-input" />
+              <p>He leído y acepto los términos y condiciones</p>
+            </div>
+          </div>
+        </div>
+        <button class="register-btn" type="button">Registrarme</button>
+      </form>
+    </main>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

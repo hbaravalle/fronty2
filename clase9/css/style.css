@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+main {
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px;
+}
+
+h2 {
+    font-size: 20px
+}
+
+button {
+    border: none;
+    padding: 8px 16px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.red {
+    background-color: red;
+    color: white;
+}
+
+.numbers {
+    font-size: 60px;
+    font-family: 'IBM Plex Mono'
+}
